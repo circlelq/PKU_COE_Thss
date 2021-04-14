@@ -1,0 +1,161 @@
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{fig/}}
+\usepackage{parskip}
+\usepackage{adjustbox}
+\usepackage{fancyhdr}
+\usepackage{commath}%定义d
+\usepackage[UTF8,heading=true]{ctex}
+\usepackage{geometry}   
+\usepackage{bm}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{paralist}
+\usepackage{multirow}
+\usepackage{booktabs} % To thicken table lines
+\usepackage{titletoc}
+\usepackage{diagbox}
+\usepackage{bm}
+\usepackage{autobreak}
+\usepackage{authblk}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{fontspec}
+\usepackage{color}
+%\usepackage{txfonts} %设置字体为times new roman
+\usepackage{lettrine}
+\usepackage{nameref}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{amssymb}%font
+\usepackage{lipsum}%make test words
+\usepackage{picinpar}%words around the picture
+\usepackage[all]{xy}%draw arrow
+\usepackage{asymptote}%draw picture
+\usepackage[perpage]{footmisc}%脚注每页清零
+\usepackage[cmyk]{xcolor}
+\usepackage{titling}
+\usepackage{lipsum}
+
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyhead[C]{\wuhao\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyfoot[L]{}
+\fancyfoot[C]{\wuhao\thepage}
+\fancyfoot[R]{}
+
+% \geometry{bottom=2.5cm,left=2cm,right=2cm,top=2.5cm}
+\newcommand{\crefrangeconjunction}{ - }
+\setlength{\parindent}{2em}
+
+\ctexset{today=big}%日期类型设置
+
+
+\CTEXsetup[name={第,章},number={\chinese{chapter}}]{chapter}
+
+\titlecontents{chapter}[-3pt]{\addvspace{1.5pt}\filright\sf\bfseries\normalsize}%
+    {\contentspush{\thecontentslabel \ \ \,}}%
+    {}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
+
+\titleformat{\section}
+  {\normalfont\sihao\sf\bfseries}{\thesection}{1em}{}
+
+\titleformat{\chapter}{\sanhao\sf\bfseries\centering}{第\,\chinese{chapter}\,章}{1em}{}
+
+\titlespacing{\chapter}{0pt}{24pt}{18pt}
+
+\titlespacing{\section}{0pt}{24pt}{18pt}
+
+\titlespacing{\subsection}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{13pt}{\baselineskip}\sf\bfseries}{\thesubsection}{1em}{}
+
+% ======================================
+% = Color de la Universidad de Sevilla =
+% ======================================
+\usepackage{tikz}
+\definecolor{PKUred}{cmyk}{0,1,1,0.45}
+%超链接设置(包括颜色)
+\usepackage[breaklinks,colorlinks,linkcolor=PKUred,citecolor=PKUred,pagebackref,urlcolor=black]{hyperref}
+\usepackage{cleveref}
+
+
+\renewcommand*\footnoterule{%
+    \vspace*{-3pt}%
+    {\color{PKUred}\hrule width 2in height 0.4pt}%
+    \vspace*{2.6pt}%
+}
+
+
+%% Color the bullets of the itemize environment and make the symbol of the third
+%% level a diamond instead of an asterisk.
+%h\renewcommand*\textbullet{\dag}
+\renewcommand*\labelitemi{\color{PKUred}\textbullet}
+\renewcommand*\labelitemii{\color{PKUred}--}
+\renewcommand*\labelitemiii{\color{PKUred}$\diamond$}
+\renewcommand*\labelitemiv{\color{PKUred}\textperiodcentered}
+
+
+
+% %%% Equation and float numbering
+% \numberwithin{equation}{section}		% Equationnumbering: section.eq#
+% \numberwithin{figure}{section}			% Figurenumbering: section.fig#
+% \numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%代码设置
+\usepackage{listings}
+\usepackage{fontspec} % 定制字体
+% \newfontfamily\menlo{Menlo}
+\usepackage{xcolor} % 定制颜色
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+backgroundcolor=\color{white},      % choose the background color
+basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
+columns=fullflexible,
+tabsize=4,
+breaklines=true,               % automatic line breaking only at whitespace
+captionpos=b,                  % sets the caption-position to bottom
+commentstyle=\color{mygreen},  % comment style
+escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
+keywordstyle=\color{blue},     % keyword style
+stringstyle=\color{mymauve}\ttfamily,  % string literal style
+frame=single,
+rulesepcolor=\color{red!20!green!20!blue!20},
+% identifierstyle=\color{red},
+language=c++,
+xleftmargin=4em,xrightmargin=2em, aboveskip=1em,
+framexleftmargin=2em,
+numbers=left
+}
+
+%脚注
+\renewcommand\thefootnote{\fnsymbol{footnote}}
+
+%定义常数i、e、积分符号d
+\newcommand\mi{\mathrm{i}}
+\newcommand\me{\mathrm{e}}
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
