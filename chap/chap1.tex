@@ -1,18 +1,13 @@
-\chapter{第二章}
+\chapter{示例}
 
 % 页面格式
 \thispagestyle{fancy}
 
 % 开始内容
 
-引用\cref{fig:1} .
+\section{列表}
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=7cm]{pku.pdf}
-	\caption{示例}
-	\label{fig:1}
-\end{figure}
+\subsection{有序列表}
 
 \begin{enumerate}
     \item 1
@@ -20,12 +15,41 @@
     \item 3
 \end{enumerate}
 
+\subsection{无序列表}
+
 \begin{itemize}
     \item 1
     \item 2
     \item 3
 \end{itemize}
 
+\section{图片}
+
+引用\cref{fig:1} .
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=7cm]{pku.pdf}
+	\caption{图片示例}
+	\label{fig:1}
+\end{figure}
+
+\section{公式}
+
+
 \begin{equation}
     \bm{F} = m\bm{a}.
+    \label{eq:1}
+\end{equation}
+\cref{eq:1}用到了\texttt{bm}包，可以方便地加粗符号。
+
+\begin{equation}
+    \int^1_0 f(x) \dif x.
+    \label{eq:2}
+\end{equation}
+\cref{eq:2}用到了\texttt{commath}包，可以方便地写微分算符。
+
+\begin{equation}
+    \me ^{\pi \mi} + 1 = 0.
+    \label{eq:3}
 \end{equation}

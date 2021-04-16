@@ -55,8 +55,9 @@
 \ctexset{today=big}%日期类型设置
 
 
-\CTEXsetup[name={第,章},number={\chinese{chapter}}]{chapter}
-
+\renewcommand{\chaptermark}[1]{%
+ \markboth{\CTEXthechapter\ \ \ #1}{}}
+ 
 \titlecontents{chapter}[-3pt]{\addvspace{1.5pt}\filright\sf\bfseries\normalsize}%
     {\contentspush{\thecontentslabel \ \ \,}}%
     {}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
