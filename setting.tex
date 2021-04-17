@@ -39,6 +39,22 @@
 \usepackage{titling}
 \usepackage{lipsum}
 
+% 页面尺寸设置
+\geometry{
+  textwidth=138mm,
+  textheight=215mm,
+  left=27mm,
+  right=27mm,
+  top=28mm, 
+  bottom=24mm,
+  headheight=2cm,
+  headsep=7mm,
+  footskip=7mm,
+  % footnotesep=20mm,
+  heightrounded,
+}
+
+% 页眉页脚设置
 \pagestyle{fancy}
 \fancyhead[L]{}
 \fancyhead[R]{}
@@ -85,12 +101,12 @@
 \usepackage[breaklinks,colorlinks,linkcolor=PKUred,citecolor=PKUred,pagebackref,urlcolor=black]{hyperref}
 \usepackage{cleveref}
 
-
-\renewcommand*\footnoterule{%
-    \vspace*{-3pt}%
-    {\color{PKUred}\hrule width 2in height 0.4pt}%
-    \vspace*{2.6pt}%
-}
+% 脚注设置
+% \renewcommand*\footnoterule{%
+%     \vspace*{-3pt}%
+%     {\color{PKUred}\hrule width 2in height 0.4pt}%
+%     \vspace*{2.6pt}%
+% }
 
 
 %% Color the bullets of the itemize environment and make the symbol of the third
@@ -100,7 +116,6 @@
 \renewcommand*\labelitemii{\color{PKUred}--}
 \renewcommand*\labelitemiii{\color{PKUred}$\diamond$}
 \renewcommand*\labelitemiv{\color{PKUred}\textperiodcentered}
-
 
 
 % %%% Equation and float numbering
@@ -160,3 +175,13 @@ numbers=left
 \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
 \newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
 \newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+
+% 全角符号变为半角
+\catcode`\。=\active
+\catcode`\，=\active
+\catcode`\；=\active
+\catcode`\：=\active
+\newcommand{。}{．}
+\newcommand{，}{,}
+\newcommand{；}{;}
+\newcommand{：}{:}
