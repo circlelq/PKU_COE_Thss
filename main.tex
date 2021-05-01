@@ -8,6 +8,9 @@
 	pdftitle={pdf名称}
 }
 
+% 在这输入你的标题，会加入页眉
+\newcommand\TheTitle{标题}
+
 % Mac 字体设置
 % \setmainfont{TimesNewRomanPSMT}
 % \setsansfont{Helvetica-Light}
@@ -29,13 +32,13 @@
 
 \setlength{\baselineskip}{20pt} % 行间距
 
-
+\include{chap/copyright}
 
 \include{chap/abstract}
 
 {
   \hypersetup{linkcolor=black}
-  \tableofcontents
+  \vspace{100pt}  \tableofcontents
   \thispagestyle{empty}
 }
 
@@ -48,8 +51,17 @@
 % 参考文献
 \input{bib.tex}
 
+% 附录
+\include{chap/appendix}
+
+
 % 致谢
 \include{chap/thanks}
+
+
+% 声明
+\include{chap/declaration}
+
 
 \nocite{*}
 

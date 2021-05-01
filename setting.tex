@@ -58,7 +58,7 @@
 \pagestyle{fancy}
 \fancyhead[L]{}
 \fancyhead[R]{}
-\fancyhead[C]{\wuhao\leftmark}
+\fancyhead[C]{\wuhao\TheTitle}
 \renewcommand{\headrulewidth}{0.5pt}
 \fancyfoot[L]{}
 \fancyfoot[C]{\wuhao\thepage}
@@ -74,14 +74,14 @@
 \renewcommand{\chaptermark}[1]{%
  \markboth{\CTEXthechapter\ \ \ #1}{}}
  
-\titlecontents{chapter}[-3pt]{\addvspace{1.5pt}\filright\sf\bfseries\normalsize}%
+\titlecontents{chapter}[-3pt]{\addvspace{5pt}\filright\sf\bfseries\normalsize}%
     {\contentspush{\thecontentslabel \ \ \,}}%
     {}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
 
 \titleformat{\section}
   {\normalfont\sihao\sf\bfseries}{\thesection}{1em}{}
 
-\titleformat{\chapter}{\sanhao\sf\bfseries\centering}{第\,\chinese{chapter}\,章}{1em}{}
+\titleformat{\chapter}{\vspace{-30pt}\sanhao\sf\bfseries\centering}{第\,\chinese{chapter}\,章}{1em}{}
 
 \titlespacing{\chapter}{0pt}{24pt}{18pt}
 
