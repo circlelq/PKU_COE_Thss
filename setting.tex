@@ -8,7 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{commath}%定义d
 \usepackage[UTF8,heading=true]{ctex}
-\usepackage{geometry}   
+\usepackage{geometry}
 \usepackage{bm}
 \usepackage{titlesec}
 \usepackage{caption}
@@ -43,10 +43,10 @@
 \geometry{
   textwidth=138mm,
   textheight=215mm,
-  left=27mm,
-  right=27mm,
-  top=28mm, 
-  bottom=24mm,
+  left=25mm,
+  right=20mm,
+  top=25mm,
+  bottom=25mm,
   headheight=2cm,
   headsep=7mm,
   footskip=7mm,
@@ -61,7 +61,7 @@
 \fancyhead[C]{\wuhao\TheTitle}
 \renewcommand{\headrulewidth}{0.5pt}
 \fancyfoot[L]{}
-\fancyfoot[C]{\wuhao\thepage}
+\fancyfoot[C]{\sf \wuhao 第\thepage 页}
 \fancyfoot[R]{}
 
 % \geometry{bottom=2.5cm,left=2cm,right=2cm,top=2.5cm}
@@ -70,16 +70,17 @@
 
 \ctexset{today=big}%日期类型设置
 
+\linespread{1.25}
 
 \renewcommand{\chaptermark}[1]{%
- \markboth{\CTEXthechapter\ \ \ #1}{}}
- 
+  \markboth{\CTEXthechapter\ \ \ #1}{}}
+
 \titlecontents{chapter}[-3pt]{\addvspace{5pt}\filright\sf\bfseries\normalsize}%
-    {\contentspush{\thecontentslabel \ \ \,}}%
-    {}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
+{\contentspush{\thecontentslabel \ \ \,}}%
+{}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
 
 \titleformat{\section}
-  {\normalfont\sihao\sf\bfseries}{\thesection}{1em}{}
+{\normalfont\sanhao}{\thesection}{1em}{}
 
 \titleformat{\chapter}{\vspace{-30pt}\sanhao\sf\bfseries\centering}{第\,\chinese{chapter}\,章}{1em}{}
 
@@ -90,7 +91,7 @@
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 
 \titleformat{\subsection}
-  {\normalfont\fontsize{13pt}{\baselineskip}\sf\bfseries}{\thesubsection}{1em}{}
+{\normalfont\sihao}{\thesubsection}{1em}{}
 
 % ======================================
 % = Color de la Universidad de Sevilla =
@@ -133,23 +134,23 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \lstset{ %
-backgroundcolor=\color{white},      % choose the background color
-basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
-columns=fullflexible,
-tabsize=4,
-breaklines=true,               % automatic line breaking only at whitespace
-captionpos=b,                  % sets the caption-position to bottom
-commentstyle=\color{mygreen},  % comment style
-escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
-keywordstyle=\color{blue},     % keyword style
-stringstyle=\color{mymauve}\ttfamily,  % string literal style
-frame=single,
-rulesepcolor=\color{red!20!green!20!blue!20},
-% identifierstyle=\color{red},
-language=c++,
-xleftmargin=4em,xrightmargin=2em, aboveskip=1em,
-framexleftmargin=2em,
-numbers=left
+  backgroundcolor=\color{white},      % choose the background color
+  basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
+  columns=fullflexible,
+  tabsize=4,
+  breaklines=true,               % automatic line breaking only at whitespace
+  captionpos=b,                  % sets the caption-position to bottom
+  commentstyle=\color{mygreen},  % comment style
+  escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},     % keyword style
+  stringstyle=\color{mymauve}\ttfamily,  % string literal style
+  frame=single,
+  rulesepcolor=\color{red!20!green!20!blue!20},
+  % identifierstyle=\color{red},
+  language=c++,
+  xleftmargin=4em,xrightmargin=2em, aboveskip=1em,
+  framexleftmargin=2em,
+  numbers=left
 }
 
 %脚注
@@ -165,16 +166,16 @@ numbers=left
 
 \newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
 \newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont}
-\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
-\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
+\newcommand{\yihao}{\fontsize{26pt}{\baselineskip}\selectfont}
+\newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}
 \newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
-\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
 \newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
 \newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}
 \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
-\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
-\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+\newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}
+\newcommand{\qihao}{\fontsize{5.5pt}{\baselineskip}\selectfont}
 
 % 全角符号变为半角
 \catcode`\。=\active
