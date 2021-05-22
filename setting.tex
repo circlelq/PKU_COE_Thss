@@ -7,7 +7,7 @@
 \usepackage{adjustbox}
 \usepackage{fancyhdr}
 \usepackage{commath}%定义d
-\usepackage[UTF8,heading=true]{ctex}
+% \usepackage[UTF8,heading=true]{ctex}
 \usepackage{geometry}
 \usepackage{bm}
 \usepackage{titlesec}
@@ -63,6 +63,8 @@
 \fancyfoot[L]{}
 \fancyfoot[C]{\sf \wuhao 第\thepage 页}
 \fancyfoot[R]{}
+\ctexset{chapter = {pagestyle = fancy}}
+
 
 % \geometry{bottom=2.5cm,left=2cm,right=2cm,top=2.5cm}
 \newcommand{\crefrangeconjunction}{ - }
@@ -101,6 +103,9 @@
 %超链接设置(包括颜色)
 \usepackage[breaklinks,colorlinks,linkcolor=PKUred,citecolor=PKUred,pagebackref,urlcolor=black]{hyperref}
 \usepackage{cleveref}
+
+% 参考文献引用样式设置
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
 
 % 脚注设置
 % \renewcommand*\footnoterule{%
