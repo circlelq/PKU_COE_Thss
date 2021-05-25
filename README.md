@@ -1,6 +1,8 @@
 # PKU_COE_Thss
 北京大学工学院本科毕业论文参考模版。作者在写本科毕业论文的时候编写了此模版，在此发布在网上给大家使用，遵守 MIT License。
 
+模版将不断更新，一般情况下模版更新后，只需要替换 `setting.tex` 文件。
+
 ## 注意事项
 
 - 本模版根据 2019 年 11 月修订的 [本科生毕业论文的基本要求及格式](https://www.coe.pku.edu.cn/docs/20191122105033554079.pdf) 进行了修订。[工学院论文格式要求网站](https://www.coe.pku.edu.cn/jxzs/bksjy/cyxz/xscyxz/bylw/index.htm)。
