@@ -14,17 +14,17 @@
 \subsection{有序列表}
 
 \begin{enumerate}
-    \item 1
-    \item 2
-    \item 3
+   \item 1
+   \item 2
+   \item 3
 \end{enumerate}
 
 \subsection{无序列表}
 
 \begin{itemize}
-    \item 1
-    \item 2
-    \item 3
+   \item 1
+   \item 2
+   \item 3
 \end{itemize}
 
 % \lipsum[1]
@@ -34,45 +34,55 @@
 引用\cref{fig:1}.
 
 \begin{figure}[htp]
-    \centering
-    \includegraphics[width=7cm]{pku.pdf}
-    \caption{图片示例。}
-    \label{fig:1}
+   \centering
+   \includegraphics[width=7cm]{pku.pdf}
+   \caption{图片示例。}
+   \label{fig:1}
 \end{figure}
+
+\begin{figure}%
+   \centering
+   \subfigure[子图1]{\label{fig:a}\includegraphics[width=.45\textwidth]{pku.pdf}}\quad
+   \subfigure[子图2]{\label{fig:b}\includegraphics[width=.45\textwidth]{pku.pdf}}
+   \caption{多图。}
+   \label{fig:2}
+\end{figure}
+
+
 
 \section{表格}
 
 
 \begin{table}[htp]
-    \centering
-    \caption{表格示例.}
-    \begin{tabular}{cc}
-        \toprule  1 & 2     \\
-        \midrule
-        内容1       & 内容2 \\
-        \bottomrule
-    \end{tabular}
-    \label{tab:1}
+   \centering
+   \caption{表格示例.}
+   \begin{tabular}{cc}
+	  \toprule  1 & 2     \\
+	  \midrule
+	  内容1       & 内容2 \\
+	  \bottomrule
+   \end{tabular}
+   \label{tab:1}
 \end{table}
 
 \section{公式}
 
 
 \begin{equation}
-    \bm{F} = m\bm{a}.
-    \label{eq:1}
+   \bm{F} = m\bm{a}.
+   \label{eq:1}
 \end{equation}
 \cref{eq:1}用到了\texttt{bm}包，可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。可以方便地加粗符号。
 
 \begin{equation}
-    \int^b_a f(x) \dif x=F(x)\bigg|^b_a.
-    \label{eq:2}
+   \int^b_a f(x) \dif x=F(x)\bigg|^b_a.
+   \label{eq:2}
 \end{equation}
 \cref{eq:2}用到了\texttt{commath}包，可以方便地写微分算符。
 
 \begin{equation}
-    \me ^{\pi \mi} + 1 = 0.
-    \label{eq:3}
+   \me ^{\pi \mi} + 1 = 0.
+   \label{eq:3}
 \end{equation}
 \cref{eq:3}用到了自定义的\verb"\me, \mi"来表示常数$\me,\ \mi$.
 
@@ -87,7 +97,7 @@ import numpy as np
 \begin{lstlisting}[language=c]
 #include <stdio.h>
 main(){
-    printf("Hello World");
+	printf("Hello World");
 }
 \end{lstlisting}
 

@@ -2,9 +2,9 @@
 \usepackage{url}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\graphicspath{{fig/}}
 \usepackage{parskip}
 \usepackage{adjustbox}
+\usepackage{subfigure}  %插入多图时用子图显示的宏包
 \usepackage{fancyhdr}
 \usepackage{commath}%定义d
 % \usepackage[UTF8,heading=true]{ctex}
@@ -41,18 +41,18 @@
 
 % 页面尺寸设置
 \geometry{
-  textwidth=138mm,
-  textheight=215mm,
-  a4paper,
-  left=25mm,
-  right=20mm,
-  top=25mm,
-  bottom=25mm,
-  headheight=2cm,
-  headsep=7mm,
-  footskip=7mm,
-  % footnotesep=20mm,
-  heightrounded,
+   textwidth=138mm,
+   textheight=215mm,
+   a4paper,
+   left=25mm,
+   right=20mm,
+   top=25mm,
+   bottom=25mm,
+   headheight=2cm,
+   headsep=7mm,
+   footskip=7mm,
+   % footnotesep=20mm,
+   heightrounded,
 }
 
 % 页眉页脚设置
@@ -76,7 +76,7 @@
 \linespread{1.25}
 
 \renewcommand{\chaptermark}[1]{%
-  \markboth{\CTEXthechapter\ \ \ #1}{}}
+\markboth{\CTEXthechapter\ \ \ #1}{}}
 
 \titlecontents{chapter}[-3pt]{\addvspace{5pt}\filright\sf\bfseries\normalsize}%
 {\contentspush{\thecontentslabel \ \ \,}}%
@@ -140,23 +140,23 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \lstset{ %
-  backgroundcolor=\color{white},      % choose the background color
-  basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
-  columns=fullflexible,
-  tabsize=4,
-  breaklines=true,               % automatic line breaking only at whitespace
-  captionpos=b,                  % sets the caption-position to bottom
-  commentstyle=\color{mygreen},  % comment style
-  escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
-  keywordstyle=\color{blue},     % keyword style
-  stringstyle=\color{mymauve}\ttfamily,  % string literal style
-  frame=single,
-  rulesepcolor=\color{red!20!green!20!blue!20},
-  % identifierstyle=\color{red},
-  language=c++,
-  xleftmargin=4em,xrightmargin=2em, aboveskip=1em,
-  framexleftmargin=2em,
-  numbers=left
+   backgroundcolor=\color{white},      % choose the background color
+   basicstyle=\footnotesize\ttfamily,  % size of fonts used for the code
+   columns=fullflexible,
+   tabsize=4,
+   breaklines=true,               % automatic line breaking only at whitespace
+   captionpos=b,                  % sets the caption-position to bottom
+   commentstyle=\color{mygreen},  % comment style
+   escapeinside={\%*}{*)},        % if you want to add LaTeX within your code
+   keywordstyle=\color{blue},     % keyword style
+   stringstyle=\color{mymauve}\ttfamily,  % string literal style
+   frame=single,
+   rulesepcolor=\color{red!20!green!20!blue!20},
+   % identifierstyle=\color{red},
+   language=c++,
+   xleftmargin=4em,xrightmargin=2em, aboveskip=1em,
+   framexleftmargin=2em,
+   numbers=left
 }
 
 %脚注

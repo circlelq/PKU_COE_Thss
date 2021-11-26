@@ -1,11 +1,12 @@
 \documentclass[UTF8,oneside,12pt]{ctexbook}
 % 各种设置都在下面的文件里
 \input{setting.tex}
+\graphicspath{{fig/}} % 图片的文件路径
 
-% pdf文件设置
+% pdf 文件设置
 \hypersetup{
-	pdfauthor={作者},
-	pdftitle={pdf名称}
+   pdfauthor={作者},
+   pdftitle={pdf名称}
 }
 
 % 在这输入你的标题，会加入页眉
@@ -27,7 +28,7 @@
 
 \begin{document}
 
-% 设置中文
+% 设置图片、表格开头的中文显示
 \input{setc.tex}
 
 \setlength{\baselineskip}{20pt} % 行间距
@@ -37,9 +38,9 @@
 \include{chap/abstract}
 
 {
-  \hypersetup{linkcolor=black}
-  \vspace{100pt}  \tableofcontents
-  \thispagestyle{empty}
+   \hypersetup{linkcolor=black}
+   \vspace{100pt}  \tableofcontents
+   \thispagestyle{empty}
 }
 
 \include{chap/introduction}
