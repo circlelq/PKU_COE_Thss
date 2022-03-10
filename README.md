@@ -1,7 +1,7 @@
 # PKU_COE_Thss
-北京大学工学院本科毕业论文参考模版。作者在写本科毕业论文的时候编写了此模版，在此发布在网上给大家使用，遵守 MIT License。
+北京大学工学院本科毕业论文参考模版。作者在写本科毕业论文的时候编写了此模版，在此发布在网上给大家使用。
 
-模版将不断更新，若工学院教务修改了模版，请联系我。一般情况下模版更新后，只需要替换 `setting.tex` 文件。
+模版将不断更新，若工学院教务修改了模版，请联系我。一般情况下模版更新后只需要替换 `setting.tex` 文件。
 
 ## 注意事项
 
@@ -28,7 +28,19 @@
 
 ## 联系方式
 
-如有问题，欢迎给我发邮件，或者在 GitHub 上发 issue。
+如有问题，欢迎给我发邮件，或者在 gitee 上发 issue。
 
 袁磊祺 yuanlq@pku.edu.cn
 
+## LaTeX 补充资料
+
+初次上手建议使用 Tex Live + VS code 的方案。安装可参考我之前写的[推送](https://mp.weixin.qq.com/s/9HbvHWSiQqASwhcWt1esgw)。进阶用户可以使用 TeX Live + NVIM 的[方案](https://castel.dev/post/lecture-notes-1/)。
+
+### 参考资料
+
+- LATEX入门 刘海洋编著(图书馆有库存)
+
+
+## License
+
+MIT
