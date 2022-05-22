@@ -80,7 +80,15 @@
 
 \titlecontents{chapter}[-3pt]{\addvspace{5pt}\filright\sf\bfseries\normalsize}%
 {\contentspush{\thecontentslabel \ \ \,}}%
-{}{\titlerule*[1.5pc]{$\cdot$}\hspace*{1pc}\contentspage}
+{}{{\mdseries\titlerule*[1pc]{.}}\contentspage}
+
+\titlecontents{section}[12pt]{\addvspace{5pt}\normalsize}%
+{\contentspush{\thecontentslabel \ \ \,}}%
+{}{\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{subsection}[24pt]{\addvspace{5pt}\normalsize}%
+{\contentspush{\thecontentslabel \ \ \,}}%
+{}{\titlerule*[1pc]{.}\contentspage}
 
 \titleformat{\section}
 {\normalfont\sanhao}{\thesection}{1em}{}
