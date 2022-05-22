@@ -20,7 +20,7 @@
 
 - 各种设置都放在了 `setting.tex` 文件里，可以方便地修改设置。
 - 字体设置在 `main.tex` 文件里。
-- 链接的颜色设置为了[北大红](https://vim.pku.edu.cn/bsgf/index.htm)，在 `setting.tex` 的第 99 行，您可以根据自己的喜好修改颜色。
+- 链接的颜色设置为了[北大红](https://vim.pku.edu.cn/bsgf/index.htm)，在 `setting.tex`，您可以根据自己的喜好修改颜色。
 
 ```tex
 \definecolor{PKUred}{cmyk}{0,1,1,0.45}
@@ -28,7 +28,7 @@
 
 ## 联系方式
 
-如有问题，欢迎给我发邮件，或者在 gitee 上发 issue。
+如有问题，欢迎给我发邮件，或者发 issue。
 
 袁磊祺 yuanlq@pku.edu.cn
 
