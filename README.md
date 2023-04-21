@@ -1,5 +1,6 @@
 # PKU_COE_Thss
-北京大学工学院本科毕业论文参考模版。作者在写本科毕业论文的时候编写了此模版，在此发布在网上给大家使用。
+
+北京大学工学院本科毕业论文参考模版。作者在写本科毕业论文的时候编写了此模版，在此发布在网上给大家使用。此模版已有多人使用并通过了教务审核。
 
 模版将不断更新，若工学院教务修改了模版，请联系我。一般情况下模版更新后只需要替换 `setting.tex` 文件。
 
@@ -7,7 +8,7 @@
 
 - 本模版根据 2019 年 11 月修订的 [本科生毕业论文的基本要求及格式](https://www.coe.pku.edu.cn/docs/20191122105033554079.pdf) 进行了修订。
 - [工学院论文格式要求网站](https://www.coe.pku.edu.cn/jxzs/bksjy/cyxz/xscyxz/bylw/index.htm)。
-- 请使用完整的 TeX live 包进行编译，此模版使用了大量的包，请勿使用 CTeX 软件（非包）， CTeX 软件已停止更新。
+- 请使用完整的 $\TeX$ live 包进行编译，此模版使用了大量的包，请勿使用 CTeX 软件（非包）， CTeX 软件已停止更新。
 - 本模版不包括封面，请用学院给的模版的封面生成 PDF 后放到第一页。
 - 您可以使用您电脑上的字体，$\LaTeX$ 默认字体可能无法显示某些生僻字。
 - 全文自动将全角符号变为半角，您可以在 `setting.tex` 文件的最后去掉这个设置。
@@ -28,18 +29,20 @@
 
 ## 联系方式
 
-如有问题，欢迎给我发邮件，或者发 issue。
+如有问题，欢迎给我发邮件，或者发 issue。考虑到网络稳定等问题，推荐在 [gitee](https://gitee.com/circlelq/PKU_COE_Thss) 上发 issue 或 pull request。
 
-袁磊祺 yuanlq@pku.edu.cn
+袁磊祺 yuanlq@pku.edu.cn circlelq@outlook.com
 
-## LaTeX 补充资料
+## $\LaTeX$ 补充资料
 
 初次上手建议使用 Tex Live + VS code 的方案。安装可参考我之前写的[推送](https://mp.weixin.qq.com/s/9HbvHWSiQqASwhcWt1esgw)。进阶用户可以使用 TeX Live + NVIM 的[方案](https://castel.dev/post/lecture-notes-1/)。
 
-### 参考资料
+$\LaTeX$ [讲座视频](https://www.bilibili.com/video/BV1nv4y1Q7fz)。
 
-- LATEX入门 刘海洋编著(图书馆有库存)
+### 推荐资料
 
+- *LATEX入门* 刘海洋编著(图书馆有库存)
+- Drew Neil, *Practical Vim*. (图书馆有中文版)
 
 ## License
 
