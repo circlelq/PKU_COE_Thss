@@ -38,6 +38,7 @@
 \usepackage[cmyk]{xcolor}
 \usepackage{titling}
 \usepackage{lipsum}
+\usepackage{setspace}
 
 % 页面尺寸设置
 \geometry{
@@ -73,10 +74,7 @@
 
 \ctexset{today=big}%日期类型设置
 
-\linespread{1.25}
-
-\renewcommand{\chaptermark}[1]{%
-\markboth{\CTEXthechapter\ \ \ #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\CTEXthechapter\ \ \ #1}{}}
 
 \titlecontents{chapter}[-3pt]{\addvspace{5pt}\filright\sf\bfseries\normalsize}%
 {\contentspush{\thecontentslabel \ \ \,}}%
