@@ -24,7 +24,7 @@
 % \setCJKsansfont{SimHei}
 % 教务要求黑体必须是SimHei，还请Mac用户下载SimHei字体
 
-% 封面请用word转PDF后插入
+% 封面请用 word 转 PDF 后插入
 
 \begin{document}
 
@@ -33,9 +33,9 @@
 
 \setlength{\baselineskip}{20pt} % 行间距
 
-\include{chap/copyright}
+\input{chap/copyright}
 
-\include{chap/abstract}
+\input{chap/abstract}
 
 {
    \hypersetup{linkcolor=black}
@@ -43,9 +43,9 @@
    \thispagestyle{empty}
 }
 
-\include{chap/introduction}
+\input{chap/introduction}
 
-\include{chap/chap1}
+\input{chap/chap1}
 
 
 
@@ -53,15 +53,15 @@
 \input{bib.tex}
 
 % 附录
-\include{chap/appendix}
+\input{chap/appendix}
 
 
 % 致谢
-\include{chap/thanks}
+\input{chap/thanks}
 
 
 % 声明
-\include{chap/declaration}
+\input{chap/declaration}
 
 
 \nocite{*}
