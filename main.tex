@@ -39,14 +39,29 @@
 
 {
    \hypersetup{linkcolor=black}
-   \vspace{100pt}  \tableofcontents
-   \thispagestyle{empty}
+   \vspace{100pt}
+   \newpage
+   \pagenumbering{gobble}
+   {\centering{\tableofcontents\thispagestyle{empty}}}
+   \clearpage
+   \pagenumbering{arabic}
+   \setcounter{page}{1}
 }
+
+% 页眉页脚设置
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\fancyhead[C]{\wuhao\TheTitle}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyfoot[L]{}
+\fancyfoot[C]{\sf \wuhao 第\thepage 页}
+\fancyfoot[R]{}
+\ctexset{chapter = {pagestyle = fancy}}
 
 \input{chap/introduction}
 
 \input{chap/chap1}
-
 
 
 % 参考文献
