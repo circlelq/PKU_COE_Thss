@@ -6,7 +6,7 @@
 
 ## 注意事项
 
-- 本模版根据 2019 年 11 月修订的 [本科生毕业论文的基本要求及格式](https://www.coe.pku.edu.cn/docs/20191122105033554079.pdf) 进行了修订。
+- 本模版已更新到 2023 年。
 - [工学院论文格式要求网站](https://www.coe.pku.edu.cn/jxzs/bksjy/cyxz/xscyxz/bylw/index.htm)。
 - 请使用完整的 $\TeX$ live 包进行编译，此模版使用了大量的包，请勿使用 CTeX 软件（非包）， CTeX 软件已停止更新。
 - 本模版不包括封面，请用学院给的模版的封面生成 PDF 后放到第一页。
@@ -31,13 +31,11 @@
 
 教务要求使用黑体，宋体，楷体指的是 word 里的黑体，宋体，楷体，而这几款字体实际是北京中易公司开发的非商用字体。事实上黑体指无衬线字体，北京中易公司开发的黑体只是黑体中的一款。个人建议大家和教务确定“黑体”是否特指，若不特指，可以使用可商用字体，例如思源的一系列字体。
 
-
-
 ## 联系方式
 
 如有问题，欢迎给我发邮件，或者发 issue。考虑到网络稳定等问题，推荐在 [gitee](https://gitee.com/circlelq/PKU_COE_Thss) 上发 issue 或 pull request。
 
-袁磊祺 yuanlq@pku.edu.cn circlelq@outlook.com
+袁磊祺 yuanlq@pku.edu.cn ， circlelq@outlook.com
 
 ## $\LaTeX$ 补充资料
 
