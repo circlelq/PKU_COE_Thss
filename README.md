@@ -31,6 +31,14 @@
 
 教务要求使用黑体，宋体，楷体指的是 word 里的黑体，宋体，楷体，而这几款字体实际是北京中易公司开发的非商用字体。事实上黑体指无衬线字体，北京中易公司开发的黑体只是黑体中的一款。个人建议大家和教务确定“黑体”是否特指，若不特指，可以使用可商用字体，例如思源的一系列字体。
 
+## 线上模版
+
+- texpage：https://www.texpage.com/template/6850a902-9ed6-468e-b753-90af2643e934
+
+- overleaf：https://www.overleaf.com/latex/templates/pku-coe-thss/hzzgndtjtthq
+
+线上模版版本不一定是最新的，请以 gitee 上的内容为准。https://gitee.com/circlelq/PKU_COE_Thss
+
 ## 联系方式
 
 如有问题，欢迎给我发邮件，或者发 issue。考虑到网络稳定等问题，推荐在 [gitee](https://gitee.com/circlelq/PKU_COE_Thss) 上发 issue 或 pull request。
