@@ -49,15 +49,16 @@
 }
 
 % 页眉页脚设置
-\pagestyle{fancy}
-\fancyhead[L]{}
-\fancyhead[R]{}
-\fancyhead[C]{\wuhao\TheTitle}
-\renewcommand{\headrulewidth}{0.5pt}
-\fancyfoot[L]{}
-\fancyfoot[C]{\sf \wuhao 第\thepage 页}
-\fancyfoot[R]{}
-\ctexset{chapter = {pagestyle = fancy}}
+\fancypagestyle{fancynohead}{
+    \fancyhead{}
+    \renewcommand\headrulewidth{0pt}
+    \fancyfoot[L]{}
+    \fancyfoot[C]{\sf \wuhao 第\thepage 页}
+    \fancyfoot[R]{}
+}
+
+\pagestyle{fancynohead}
+\ctexset{chapter = {pagestyle = fancynohead}}
 
 \input{chap/introduction}
 
